@@ -1,0 +1,43 @@
+<style>
+    body { margin: 0; font-family: Arial, sans-serif; }
+
+    /* HEADER med billede */
+    header{
+      height: 400px;
+      background: url('pizza.jpg') center/cover no-repeat;
+      display:flex; align-items:center; justify-content:center;
+      color:#fff; text-align:center;
+    }
+    header h1{ margin:0; font-size:70px; text-shadow:3px 3px 6px #000; }
+
+    /* STICKY BAR UNDER HEADER */
+    nav{
+      position: sticky;       /* gør baren sticky */
+      top: 10px;              /* afstand til toppen når den klistrer */
+      z-index: 10;
+
+      position: relative;     /* for center-linket nedenfor */
+      display:flex; justify-content:space-between; align-items:center;
+      padding: 14px 28px;
+      margin: 10px 20px;      /* lidt luft i siderne/over og under */
+      background: rgba(0,0,0,0.6);     /* gennemsigtig baggrund */
+      border-radius: 30px;             /* runde hjørner */
+      backdrop-filter: blur(2px);      /* valgfrit: gør tekst mere læsbar */
+      color:#fff;
+    }
+
+    /* venstre + højre grupper */
+    .right{ display:flex; gap:20px; }
+
+    /* center-link midt i baren */
+    .center{
+      position:absolute; left:50%; transform:translateX(-50%);
+      white-space:nowrap;
+    }
+
+    /* links */
+    nav a{
+      color:#fff; text-decoration:none; font-weight:bold; font-size:20px;
+    }
+    nav a:hover{ color:orange; }
+  </style>
